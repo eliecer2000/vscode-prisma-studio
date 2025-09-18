@@ -1,0 +1,11 @@
+{
+    "webPreview.url": "http://localhost:5555",
+    "webPreview.schemaPath": "prisma/schema.prisma",
+    "webPreview.port": 5555,
+    "webPreview.mediaScreenOverride": true,
+    "webPreview.mediaScreen": {
+        "Mobile": "375x667",
+        "Tablet": "768x1024",
+        "Desktop": 1440
+    }
+}

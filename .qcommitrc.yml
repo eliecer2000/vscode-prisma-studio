@@ -1,0 +1,6 @@
+ticket_code: ""
+confirm_commit: true
+confirm_push: true
+unverified_commit: true
+language: "en"
+use_ticket: false

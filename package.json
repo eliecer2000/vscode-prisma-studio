@@ -1,0 +1,257 @@
+{
+	"name": "prisma-studio",
+	"displayName": "Prisma Studio",
+	"version": "1.0.0",
+	"description": "Prisma Studio integration for VSCode - Database management and visualization tool",
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"prisma",
+		"studio",
+		"database",
+		"orm",
+		"preview",
+		"browser"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eliecer2000/vscode-prisma-studio.git"
+	},
+	"license": "MIT",
+	"author": "Eliezer Rangel",
+	"publisher": "eliecer2000",
+	"main": "out/extension.js",
+	"scripts": {
+		"compile": "tsc -p ./",
+		"dev": "./scripts/dev.sh",
+		"install-local": "./scripts/install-local.sh",
+		"lint": "eslint \"src/**/*.ts\"",
+		"package": "vsce package",
+		"vscode:prepublish": "npm run compile",
+		"watch": "tsc -w -p ./"
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "prismaStudio.open",
+				"title": "Open Prisma Studio",
+				"icon": "$(preview)"
+			},
+			{
+				"command": "prismaStudio.back",
+				"title": "Go Back",
+				"icon": "$(arrow-left)"
+			},
+			{
+				"command": "prismaStudio.forward",
+				"title": "Go Forward",
+				"icon": "$(arrow-right)"
+			},
+			{
+				"command": "prismaStudio.refresh",
+				"title": "Refresh",
+				"icon": "$(refresh)"
+			},
+			{
+				"command": "prismaStudio.url",
+				"title": "Prisma Studio URL",
+				"icon": "$(search)"
+			},
+			{
+				"command": "prismaStudio.screenView",
+				"title": "Toggle view Column",
+				"icon": "$(editor-layout)"
+			},
+			{
+				"command": "prismaStudio.responsiveView",
+				"title": "Toggle resizable responsive view",
+				"icon": "$(screen-full)"
+			},
+			{
+				"command": "prismaStudio.openDevTools",
+				"title": "Open developer Tools",
+				"icon": "$(terminal)"
+			},
+			{
+				"command": "prismaStudio.openInBrowser",
+				"title": "Open in Browser",
+				"icon": "$(link-external)"
+			},
+			{
+				"command": "prismaStudio.startPrisma",
+				"title": "Start Prisma Studio",
+				"icon": "$(play)"
+			},
+			{
+				"command": "prismaStudio.stopPrisma",
+				"title": "Stop Prisma Studio",
+				"icon": "$(stop)"
+			},
+			{
+				"command": "prismaStudio.showMenu",
+				"title": "Prisma Studio Menu",
+				"icon": "$(menu)"
+			},
+			{
+				"command": "prismaStudio.config",
+				"title": "Config Prisma Studio",
+				"icon": "$(gear)"
+			}
+		],
+		"configuration": {
+			"title": "Prisma Studio",
+			"properties": {
+				"webPreview.url": {
+					"type": "string",
+					"default": "http://localhost:5555",
+					"description": "The localhost address for Prisma Studio."
+				},
+				"webPreview.schemaPath": {
+					"type": "string",
+					"default": "",
+					"description": "Path to schema.prisma file"
+				},
+				"webPreview.port": {
+					"type": "number",
+					"default": 5555,
+					"description": "Port for Prisma Studio server"
+				},
+				"webPreview.mediaScreenOverride": {
+					"type": "boolean",
+					"default": false,
+					"description": "Prisma Studio media screen override"
+				},
+				"webPreview.mediaScreen": {
+					"type": "object",
+					"default": {
+						"SM": 640,
+						"MD": 768,
+						"LG": 1024,
+						"XL": 1280,
+						"2XL": 1536
+					},
+					"description": "Prisma Studio media screen break points. Example: { \"MD\": 540 } or { \"Mobile\": \"375x780\" }"
+				}
+			}
+		},
+		"keybindings": [
+			{
+				"command": "prismaStudio.open",
+				"key": "ctrl+alt+p"
+			},
+			{
+				"command": "prismaStudio.url",
+				"key": "ctrl+alt+u"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "prismaStudio.back",
+					"when": "false"
+				},
+				{
+					"command": "prismaStudio.forward",
+					"when": "false"
+				},
+				{
+					"command": "prismaStudio.refresh",
+					"when": "false"
+				},
+				{
+					"command": "prismaStudio.url",
+					"when": "PrismaStudioActive"
+				},
+				{
+					"command": "prismaStudio.responsiveView",
+					"when": "false"
+				},
+				{
+					"command": "prismaStudio.screenView",
+					"when": "false"
+				},
+				{
+					"command": "prismaStudio.openDevTools",
+					"when": "false"
+				},
+				{
+					"command": "prismaStudio.openInBrowser",
+					"when": "false"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "prismaStudio.back",
+					"group": "navigation@1",
+					"when": "PrismaStudioActive && activeWebviewPanelId == 'prismaStudio'"
+				},
+				{
+					"command": "prismaStudio.forward",
+					"group": "navigation@2",
+					"when": "false"
+				},
+				{
+					"command": "prismaStudio.refresh",
+					"group": "navigation@3",
+					"when": "PrismaStudioActive && activeWebviewPanelId == 'prismaStudio'"
+				},
+				{
+					"command": "prismaStudio.url",
+					"group": "navigation@4",
+					"when": "PrismaStudioActive && activeWebviewPanelId == 'prismaStudio'"
+				},
+				{
+					"command": "prismaStudio.screenView",
+					"group": "navigation@5",
+					"when": "PrismaStudioActive && activeWebviewPanelId == 'prismaStudio'"
+				},
+				{
+					"command": "prismaStudio.responsiveView",
+					"group": "navigation@6",
+					"when": "PrismaStudioActive && activeWebviewPanelId == 'prismaStudio'"
+				},
+				{
+					"command": "prismaStudio.openDevTools",
+					"group": "navigation@7",
+					"when": "PrismaStudioActive && activeWebviewPanelId == 'prismaStudio'"
+				},
+				{
+					"command": "prismaStudio.openInBrowser",
+					"group": "navigation@8",
+					"when": "PrismaStudioActive && activeWebviewPanelId == 'prismaStudio'"
+				}
+			]
+		}
+	},
+	"activationEvents": [
+		"*"
+	],
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@types/glob": "^9.0.0",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "24.5.2",
+		"@types/vscode": "^1.70.0",
+		"@vscode/test-electron": "^2.5.2",
+		"eslint": "^9.35.0",
+		"glob": "^11.0.3",
+		"mocha": "^11.7.2",
+		"typescript": "^5.9.2"
+	},
+	"engines": {
+		"vscode": "^1.70.0"
+	},
+	"icon": "icon.png"
+}
