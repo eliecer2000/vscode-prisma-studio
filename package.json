@@ -20,7 +20,7 @@
 	},
 	"license": "MIT",
 	"author": "Eliezer Rangel",
-	"publisher": "eliecer2000",
+	"publisher": "EliezerRangel",
 	"main": "out/extension.js",
 	"scripts": {
 		"compile": "tsc -p ./",
@@ -245,6 +245,7 @@
 		"@types/node": "24.5.2",
 		"@types/vscode": "^1.70.0",
 		"@vscode/test-electron": "^2.5.2",
+		"@vscode/vsce": "^3.6.0",
 		"eslint": "^9.35.0",
 		"glob": "^11.0.3",
 		"mocha": "^11.7.2",

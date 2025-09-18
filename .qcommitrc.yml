@@ -1,6 +1,6 @@
 ticket_code: ""
-confirm_commit: true
-confirm_push: true
+confirm_commit: false
+confirm_push: false
 unverified_commit: true
 language: "en"
 use_ticket: false
