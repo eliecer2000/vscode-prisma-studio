@@ -2,9 +2,9 @@
 
 ![Prisma Studio](media/prisma-studio.jpg)
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/eliecer2000.prisma-studio?style=flat-square&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=eliecer2000.prisma-studio)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/d/eliecer2000.prisma-studio?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=eliecer2000.prisma-studio)
-[![Rating](https://img.shields.io/visual-studio-marketplace/r/eliecer2000.prisma-studio?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=eliecer2000.prisma-studio)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/EliezerRangel.prisma-studio?style=flat-square&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=EliezerRangel.prisma-studio)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/EliezerRangel.prisma-studio?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=EliezerRangel.prisma-studio)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/EliezerRangel.prisma-studio?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=EliezerRangel.prisma-studio)
 [![License](https://img.shields.io/github/license/eliecer2000/vscode-prisma-studio?style=flat-square)](LICENSE)
 
 A powerful VSCode extension that seamlessly integrates Prisma Studio directly into your development environment. Access and manage your database with ease without leaving your code editor.
@@ -40,7 +40,7 @@ A powerful VSCode extension that seamlessly integrates Prisma Studio directly in
 3. Search for "Prisma Studio"
 4. Click Install on the extension by Eliezer Rangel
 
-Alternatively, install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=eliecer2000.prisma-studio).
+Alternatively, install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=EliezerRangel.prisma-studio).
 
 ## 🚀 Quick Start
 
@@ -263,8 +263,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Eliezer Rangel**
 - GitHub: [@eliecer2000](https://github.com/eliecer2000)
-- Extension: [Prisma Studio](https://marketplace.visualstudio.com/items?itemName=eliecer2000.prisma-studio)
+- Extension: [Prisma Studio](https://marketplace.visualstudio.com/items?itemName=EliezerRangel.prisma-studio)
 
 ---
 
-⭐ If you find this extension helpful, please consider giving it a star on [GitHub](https://github.com/eliecer2000/vscode-prisma-studio) and leaving a review on the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=eliecer2000.prisma-studio)!
+⭐ If you find this extension helpful, please consider giving it a star on [GitHub](https://github.com/eliecer2000/vscode-prisma-studio) and leaving a review on the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=EliezerRangel.prisma-studio)!
