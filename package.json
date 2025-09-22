@@ -1,7 +1,7 @@
 {
 	"name": "prisma-studio",
 	"displayName": "Prisma Studio",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "Prisma Studio integration for VSCode - Database management and visualization tool",
 	"categories": [
 		"Other"
