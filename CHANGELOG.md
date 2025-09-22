@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1](https://github.com/eliecer2000/vscode-prisma-studio/compare/prisma-studio-v1.1.0...prisma-studio-v1.1.1) (2025-09-22)
+
+
+### Bug Fixes
+
+* update release-please workflow configuration ([aea50ea](https://github.com/eliecer2000/vscode-prisma-studio/commit/aea50ea6c4687d2d677e1ca60cfeac97d7c683af))
+* update release-please workflow configuration ([e0ceeea](https://github.com/eliecer2000/vscode-prisma-studio/commit/e0ceeea051bf423636373f07658676c45fb8d530))
+
 ## [1.1.0](https://github.com/eliecer2000/vscode-prisma-studio/compare/prisma-studio-v1.0.0...prisma-studio-v1.1.0) (2025-09-22)
 
 
